@@ -1,0 +1,250 @@
+1. write a c# Sharp program to print the sum of two numbers
+
+using System;
+
+namespace firstconsole_app
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int x;
+            int y, sum = 0;
+            Console.WriteLine("Enter th two number");
+            x = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
+            sum = x + y;
+            Console.Write("{0} +{1} ={2}", x,y,sum);
+            Console.ReadLine();
+
+        }
+        
+           
+    }
+}
+
+input 
+8
++3=11
+
+
+4. array 
+
+
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] x = { 10, 20, 35, 40, 50 };
+            int[] y = new int[5];
+            int[] z = new int[5];
+            int i, j=0, k=0,n;
+            
+          
+            for(i=0; i<5; i++)
+            {
+                if(x[i] %2 == 0)
+                {
+                    y[j] = x[i];
+                    j++;
+                }
+                else
+                {
+                    z[k] = x[i];
+                    k++;
+                }
+            }
+            Console.WriteLine(" The Even elements  ..... \n ");
+            for(i=0; i<j; i++)
+            {
+                Console.Write( y[i]);
+
+            }
+            Console.Write("\n The odd elements ");
+            for(i=0; i<k; i++)
+            {
+                Console.Write( z[i]);
+
+            }
+            Console.Write("\n");
+        }
+    }
+}
+
+
+output ; -
+
+even elements - 10 20 40 50
+odd elements - 35 
+
+
+
+3 . Write a c# sharp program to swap two numbers.
+
+using System;
+
+namespace firstconsole_app
+{
+    class swapping
+    {
+        static void Main(string[] args)
+        {
+            int x = 10, y = 6;
+            x = x * y;
+            y = x / y;
+            x = x / y;
+
+            Console.WriteLine("After swaping" + "x=" + x + "y=" + y);
+            
+
+        }
+        
+           
+    }
+}
+
+input 
+x = 6 y =10
+
+
+20.Write a program in C# Sharp to make such a pattern like right angle triangle 
+with number increased by 1.
+The pattern like :
+1
+2 3
+4 5 6
+7 8 9 10
+
+program
+
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+         public static void Main(string[] args)
+        {
+            int i, j, k = 1;
+            for(i=1; i<=4; i++)
+            {
+                for(j=1; j<=i; j++)
+                {
+                    Console.Write(k);
+                    k++;
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey(true);
+
+        }
+        
+    }
+}
+
+output -
+1
+23
+456
+78910
+
+
+23. Write a program in C# Sharp to display the pattern like right angle triangle 
+using an asterisk.
+The pattern like :
+*
+**
+***
+****
+
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+         public static void Main(string[] args)
+        {
+            
+            for(int i=1; i<=4; i++)
+            {
+                for(int j=1; j<=i; j++)
+                {
+                    Console.Write("*");
+                    
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey(true);
+
+        }
+        
+    }
+}
+
+output - 
+*
+**
+***
+****
+
+23  Write a program in C# to Print Pattern .
+*
+***
+*****
+*******
+*********
+***********
+*********
+*******
+*****
+***
+*
+
+
+
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+         public static void Main(string[] args)
+        {
+            int i, j;
+            int MAX = 10;
+            for (i = 1; i <= MAX; i++)
+            {
+                for (j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            for (i = MAX; i >= 1; i--)
+            {
+                for (j = 1; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
